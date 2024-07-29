@@ -30,8 +30,9 @@ Our code is implemented in Python 3.8, PyTorch 1.11.0 and CUDA 11.3.
 ```bash
 conda create -n npull python=3.8
 conda activate npull
-conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
-pip install tqdm pyhocon==0.3.57 trimesh PyMCubes scipy
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+pip install tqdm pyhocon==0.3.57 trimesh scipy
+pip install pymcubes==0.1.4
 ```
 
 ## Data:
